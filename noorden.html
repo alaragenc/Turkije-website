@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Noorden</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <style>
+       
+        /* Navbar opmaak */
+        nav {
+          background-color: rgb(255, 255, 255);
+          color: rgb(255, 255, 255);
+          height: 50px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 40px;
+        }
+
+        nav li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          transition: color 0.3s;
+        }
+
+        nav a:hover {
+          color: red;
+        }
+
+        .dropdown {
+          position: relative;
+        }
+
+        /* Navbar dropdown opmaak van items */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          min-width: 160px;
+          border-radius: 4px;
+        }
+
+        .dropdown-content a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: #333;
+        }
+
+        /* Dropdown van boven naar beneden*/
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* Kleur van dropdown verandert bij hover */
+        .dropdown-content a:hover {
+          background-color: #f2f2f2;
+        }
+
+        body {
+            font-family: 'Playfair Display';
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigatie -->
+        <nav>
+            <h2>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown">
+                      <a href="#">Reiswijzer<span style="font-size: 15px; margin-left: 7px;" class="arrow">&#9660;</span></a>
+                      <div class="dropdown-content">
+                          <!-- Dropdown items-->
+                          <a href="noorden.html">Noorden</a>
+                          <a href="oosten.html">Oosten</a>
+                          <a href="westen.html">Westen</a>
+                          <a href="zuiden.html">Zuiden</a>
+                          <a href="centrum.html">Centrum</a>
+                      </div>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </h2>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="centered-section">
+            <h1>Het Noorden</h1>
+          <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Istanbul</p>
+                    <p style="color: black; margin-bottom: 75px">Istanbul, de grootste stad van Turkije, is een historische metropool 
+                      die zich uitstrekt over twee continenten, Europa en Azië. Het heeft een rijke culturele erfenis, met iconische 
+                      bezienswaardigheden zoals de Hagia Sophia en de Blauwe Moskee, die de Romeinse, Byzantijnse en Ottomaanse 
+                      geschiedenis weerspiegelen. Istanbul biedt een boeiende mix van geschiedenis, diverse cultuur en moderniteit, 
+                      waardoor het een must-visit bestemming is voor reizigers die een unieke en meeslepende ervaring zoeken.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/istanbul.png" width="900px" alt="Istanbul">
+                </div>
+            </div>
+          </article>
+          <article>
+            <div class="container2">
+                <div class="image2">
+                    <img src="images/kiz_kulesi.png" width="900px" alt="Kiz kulesi" style="margin-top: -150px;">
+                </div>
+                <div class="text2">
+                    <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Kiz Kulesi</p>
+                    <p style="color: black; margin-bottom: 75px">De Kız Kulesi, ook wel bekend als de Maiden's Tower, is een 
+                      historische toren gelegen op een klein eiland. Het torentje heeft een rijke geschiedenis en fungeerde in de loop 
+                      der eeuwen als een vuurtoren, fort en zelfs een quarantainestation. Tegenwoordig is het een populaire toeristische 
+                      attractie met een restaurant en een uitkijkpunt, en het staat bekend om zijn schilderachtige ligging met uitzicht op 
+                      de stad en de zee. De Kız Kulesi is een intrigerend en romantisch symbool van Istanbul.</p>
+                </div>
+            </div>
+          </article>
+          <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 40px; font-size: 40px;" class="title">Grote bazaar</p>
+                    <p style="color: black; margin-bottom: 75px">De Grote Bazaar in Istanbul is een van 's werelds oudste en grootste 
+                      overdekte marktplaatsen. Het is een bruisende en kleurrijke plek waar bezoekers een overvloed aan winkels en kraampjes 
+                      vinden die een breed scala aan goederen aanbieden, waaronder textiel, sieraden, tapijten, kruiden en souvenirs. De markt 
+                      is doordrenkt van geschiedenis en cultuur, en het is een uitstekende plek om te winkelen, te onderhandelen en de lokale 
+                      Turkse ambiance te ervaren. Het is een populaire bestemming voor toeristen en een belangrijk cultureel symbool van 
+                      Istanbul.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/Grote_bazaar.png" width="900px" alt="Grote bazaar" style="margin-top: -150px;">
+                </div>
+            </div>
+            </article>
+            <article>
+            <div class="container2">
+                <div class="image2">
+                    <img src="images/trabzon.png" width="900px" alt="Trabzon" style="margin-top: -150px;">
+                </div>
+                <div class="text2">
+                    <p style="color: black; margin-top: 190px; font-size: 40px;" class="title">Trabzon</p>
+                    <p style="color: black; margin-bottom: 75px">Trabzon is een kuststad in het noorden van Turkije, met een rijke 
+                      geschiedenis en een prachtige natuurlijke omgeving. Het biedt bezoekers een schat aan historische 
+                      bezienswaardigheden en culturele ervaringen, samen met de schoonheid van de Zwarte Zee en de omliggende bergen. 
+                      De stad heeft een unieke sfeer en een diversiteit aan lokale tradities en levensstijlen. Trabzon is een 
+                      aantrekkelijke bestemming voor reizigers die de charme van de noordelijke kust van Turkije willen ontdekken.</p>
+                </div>
+            </div>
+            </article>
+            <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 40px; font-size: 40px;" class="title">Sumela Klooster</p>
+                    <p style="color: black; margin-bottom: 75px">Het Sumela-klooster, ook bekend als het Sumela-klooster van de 
+                      Maagd Maria, is een historisch kloostercomplex dat zich op een spectaculaire klif bevindt. Het klooster dateert 
+                      uit de 4e eeuw en heeft gediend als een belangrijk religieus centrum en bedevaartsoord voor orthodoxe christenen. 
+                      Het complex omvat een kerk, kapellen, kamers en prachtige fresco's die op de klifwanden zijn geschilderd. 
+                      Het Sumela-klooster staat bekend om zijn adembenemende natuurlijke omgeving, religieuze geschiedenis en 
+                      opmerkelijke architectuur.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/sumela_klooster.png" width="900px" alt="Sumela klooster" style="margin-top: -150px;">
+                </div>
+            </div>
+            </article>
+            <article>
+            <div class="container2">
+                <div class="image2">
+                    <img src="images/Atatürk Köşkü.png" width="900px" alt="Ataturk kosku" style="margin-top: -150px;">
+                </div>
+                <div class="text2">
+                    <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Atatürk Köşkü</p>
+                    <p style="color: black; margin-bottom: 75px">Het Atatürk Köşkü, ook wel bekend als het Atatürk-paviljoen, is 
+                      een historische residentie in Turkije. Dit prachtige gebouw was de zomerverblijfplaats van Mustafa Kemal Atatürk, 
+                      de oprichter van de moderne Turkse republiek. Het paviljoen is gelegen in een schilderachtige omgeving en biedt 
+                      een kijkje in het leven van Atatürk. Het is nu een museum en een belangrijke herinnering aan de oprichter van 
+                      Turkije, waar bezoekers zijn persoonlijke bezittingen en de geschiedenis van de republiek kunnen verkennen. 
+                      Het Atatürk Köşkü is een waardevolle historische en culturele site in Turkije.</p>
+                </div>
+            </div>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <section class="centered-section">>
+        <footer>
+            <img src="images/instagramms.png" width="40px" alt="Instagram" style="margin-right: -30px"> <img src="images/Facebook.png" width="20px" alt="Facebook" style="margin-left: 20px"> <img src="images/Twitter.png" width="20px" alt="Twitter">
+            <p style="margin-top:-5px">Copyright - Alara Genc 2023</p> 
+        </footer>
+    </section>
+</body>
+</html>

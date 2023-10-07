@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Noorden</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <style>
+    
+    /* Navbar opmaak */
+    nav {
+      background-color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+      height: 50px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 40px;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    /* Navbar dropdown opmaak van items */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      min-width: 160px;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Dropdown van boven naar beneden*/
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Kleur van dropdown verandert bij hover */
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+    }
+
+    body {
+      font-family: 'Playfair Display';font-size: 22px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+       <!-- Navigatie balk -->
+        <nav>
+            <h2>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="#">Reiswijzer<span style="font-size: 15px; margin-left: 7px;" class="arrow">&#9660;</span></a>
+                  <div class="dropdown-content">
+                    <!-- Dropdown items -->
+                    <a href="noorden.html">Noorden</a>
+                    <a href="oosten.html">Oosten</a>
+                    <a href="westen.html">Westen</a>
+                    <a href="zuiden.html">Zuiden</a>
+                    <a href="centrum.html">Centrum</a>
+                  </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </h2>
+          </nav>
+  </header>
+  <main>
+    <section class="centered-section">
+        <h1>Het Centrum</h1>
+      <article>
+        <div class="container2">
+        <div class="text">
+          <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Ankara</p>
+            <p style="color: black; margin-bottom: 75px">Ankara is de hoofdstad van Turkije en een belangrijk politiek,
+              cultureel en economisch centrum. Het is gelegen in het centrale deel van het land en heeft een diverse 
+              bevolking en levendige sfeer. De stad heeft een rijke geschiedenis en biedt bezoekers een mix van oude
+              en moderne invloeden. Ankara is ook bekend om zijn universiteiten, winkelcentra en culinaire scene, 
+              waardoor het een boeiende bestemming is om de Turkse cultuur en levensstijl te ervaren.</p>
+        </div>
+        
+        <div class="image2">
+            <img src="images/ankara.png" width= 900px alt="Ankara">
+        </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="container2">
+          <div class="image2">
+            <img src="images/anitkabir.png" width= 900px  alt="Anitkabit" style="margin-top: -150px;">
+          </div>
+
+          <div class="text2">
+          <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Anitkabir</p>
+            <p style="color: black; margin-bottom: 75px">Anıtkabir is het imposante mausoleum van Mustafa Kemal Atatürk,
+              de stichter eerste president van de Republiek Turkije. Gelegen in Ankara, 
+              de hoofdstad van Turkije, is Anıtkabir een indrukwekkend nationaal monument dat 
+              zijn graf en museum omvat. Het mausoleum is ontworpen met een strakke en statige architectuur en symboliseert de grootsheid
+              van Atatürks nalatenschap. Het is een belangrijke nationale herdenkingsplaats en een plek van diepe nationale trots voor Turkije, 
+              waar bezoekers de kans krijgen om meer te leren over het leven en de prestaties van deze historische figuur die de Turkse natie
+              heeft gevormd.</p>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="container2">
+        <div class="text">
+            <p style="color: black; margin-top: 40px; font-size: 40px;" class="title">Cappadocië</p>
+            
+            <p style="color: black; margin-bottom: 75px">Cappadocië is een unieke en betoverende regio in Centraal-Turkije,
+              die bekend staat om zijn buitengewone landschappen en rotsformaties. Het gebied wordt gekenmerkt door zogenaamde
+              "feeënschoorstenen," die ontstaan zijn door vulkanische activiteit en erosie. Deze rotsen zijn vaak uitgehouwen tot huizen,
+              kerken en zelfs hele ondergrondse steden door vroegere bewoners. Cappadocië is ook beroemd om zijn heteluchtballonvaarten, 
+              die bezoekers de kans bieden om de adembenemende uitzichten over de regio te ervaren. De rijke geschiedenis, unieke geologie
+              en betoverende landschappen maken Cappadocië een must-visit bestemming voor reizigers.</p>
+        </div>
+        
+        <div class="image2">
+            <img src="images/capadoccia.png" width= 900px alt="Capadoccia" style="margin-top: -150px;">
+        </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="container2">
+          <div class="image2">
+            <img src="images/bogazkoy.png" width= 900px  alt="Bogazkoy" style="margin-top: -150px;">
+          </div>
+
+        <div class="text2">
+            <p style="color: black; margin-top: 190px; font-size: 40px;" class="title">Boğazköy</p>
+            <p style="color: black; margin-bottom: 75px">Boğazköy, ook wel bekend als Hattuša, is een historische archeologische site in 
+              Turkije. Het was de hoofdstad van het oude Hettitische rijk, dat floreerde tijdens de late bronstijd en ijzertijd. Boğazköy 
+              staat bekend om zijn indrukwekkende stadsmuren, tempels en kleitabletten met spijkerschrift die belangrijke informatie over
+              de Hettitische beschaving bevatten. De site biedt bezoekers de kans om inzicht te krijgen in een oude beschaving die een 
+              cruciale rol speelde in de geschiedenis van Anatolië en omliggende regio's. Het is een fascinerende bestemming voor 
+              geschiedenisliefhebbers en archeologen.</p>
+          </div>
+          </div>
+      </article>
+    </section>
+    </main>
+    <!--footer-->
+    <section class="centered-section">  
+        <footer>
+            <img src="images/instagramms.png" width= 40px alt="Instagram" style="margin-right: -30px"> <img src="images/Facebook.png" width= 20px alt="Facebook" style="margin-left: 20px"> <img src="images/Twitter.png" width= 20px alt="Twitter">
+            <p style="margin-top:-5px">Copyright - Alara Genc 2023</p> 
+        </footer>
+    </section>
+</body>
+</html>

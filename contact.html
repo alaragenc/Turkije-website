@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <style>
+          
+        /* Navbar opmaak */
+        nav {
+          background-color: rgb(255, 255, 255);
+          color: rgb(255, 255, 255);
+          height: 50px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 40px;
+        }
+
+        nav li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          transition: color 0.3s;
+        }
+
+        nav a:hover {
+          color: red;
+        }
+
+        .dropdown {
+          position: relative;
+        }
+
+        /* Navbar dropdown opmaak van items */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          min-width: 160px;
+          border-radius: 4px;
+        }
+
+        .dropdown-content a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: #333;
+        }
+
+        /* Dropdown van boven naar beneden*/
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* Kleur van dropdown verandert bij hover */
+        .dropdown-content a:hover {
+          background-color: #f2f2f2;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #dc0404;
+        }
+
+        body {
+            font-family: 'Playfair Display';
+            font-size: 22px;
+            background-image: url('images/contact.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            opacity: 0.8; 
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--navigatie-->
+        <nav>
+            <h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Reiswijzer<span style="font-size: 15px; margin-left: 7px;" class="arrow">&#9660;</span></a>
+                        <div class="dropdown-content">
+                            <!-- Dropdown items -->
+                            <a href="noorden.html">Noorden</a>
+                            <a href="oosten.html">Oosten</a>
+                            <a href="westen.html">Westen</a>
+                            <a href="zuiden.html">Zuiden</a>
+                            <a href="centrum.html">Centrum</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </h2>
+        </nav>
+    </header>
+    <!--main-->
+    <main>
+        <section class="centered-section">
+          <article>
+            <p style="margin-top: 140px; font-size: 30px; font-weight: bold;">Mocht je vragen hebben over een van de bestemmingen, vul dan het contactformulier in.</p>
+            <p style="margin-top: 20px; font-size: 24px;">Vergeet vooral niet aan te geven wat jouw favoriete bestemming is ;)</p>
+            <div class="container">
+                <form action="mailto:ontvanger@example.com" method="post" enctype="text/plain" style="width: 500px; margin-top: -90px">
+                    Naam:<br>
+                    <input type="text" name="naam" required><br>
+                    E-mailadres:<br>
+                    <input type="email" name="email" required><br>
+                    Bericht:<br>
+                    <textarea name="bericht" rows="5" required></textarea><br><br>
+                    <input type="submit" value="Verstuur">
+                </form>
+            </div>
+          </article>
+        </section>
+    </main>
+    <!--footer-->
+    <section class="centered-section">
+        <footer>
+            <p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+                <img src="images/instagramms.png" width= 40px alt="Instagram" style="margin-right: -30px">
+                <img src="images/Facebook.png" width= 20px alt="Facebook" style="margin-left: 20px">
+                <img src="images/Twitter.png" width= 20px alt="Twitter"> <br>
+                Copyright - Alara Genc 2023
+            </p>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px; 
+    margin-top: 120px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.centered-section {
+    text-align: center;
+}
+
+footer {
+    margin-top: 220px;
+    color:rgb(0, 0, 0);
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 80vh;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Code voor de slideshow op index.html*/
+.image-slideshow {
+display: flex;
+justify-content: center; 
+align-items: center; 
+position: relative;
+max-width: 1500px; 
+margin: 0 auto; 
+}
+
+.image {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    max-width: 100%; /* Zorgt ervoor dat de afbeeldingen niet breder zijn dan de container */
+}
+
+/* Pijltjes aan de zijkanten */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.next {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 5px;
+    font-size: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next:hover {
+    background-color: #9a0404;
+}
+
+.prev {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 5px;
+    font-size: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.prev:hover {
+    background-color: hsl(6, 99%, 33%);
+}
+
+.text {
+    width: 40%;
+    margin-left: 140px;
+    margin-bottom: 110px;
+}
+
+.text2 {
+    width: 40%;
+    margin-right: 170px;
+    margin-top: -280px;
+}
+
+.image2 {
+    transform: scale(0.62);
+}
+
+.title {
+    margin-bottom: 45px;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Achtergrondkleur voor bijschriften met transparantie */
+    color: white;
+    position: absolute;
+    bottom: 7px;
+    width: 1299px;
+}
+

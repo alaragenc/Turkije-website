@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oosten</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <style>
+    
+        /* Navbar opmaak */
+        nav {
+          background-color: rgb(255, 255, 255);
+          color: rgb(255, 255, 255);
+          height: 50px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 40px;
+        }
+
+        nav li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          transition: color 0.3s;
+        }
+
+        nav a:hover {
+          color: red;
+        }
+
+        .dropdown {
+          position: relative;
+        }
+
+        /* Navbar dropdown opmaak van items */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          min-width: 160px;
+          border-radius: 4px;
+        }
+
+        .dropdown-content a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: #333;
+        }
+
+        /* Dropdown van boven naar beneden*/
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* Kleur van dropdown verandert bij hover */
+        .dropdown-content a:hover {
+          background-color: #f2f2f2;
+        }
+
+        body {
+            font-family: 'Playfair Display';
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigatie -->
+        <nav>
+            <h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Reiswijzer<span style="font-size: 15px; margin-left: 7px;" class="arrow">&#9660;</span></a>
+                        <div class="dropdown-content">
+                            <!-- Dropdown content goes here -->
+                            <a href="noorden.html">Noorden</a>
+                            <a href="oosten.html">Oosten</a>
+                            <a href="westen.html">Westen</a>
+                            <a href="zuiden.html">Zuiden</a>
+                            <a href="centrum.html">Centrum</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </h2>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="centered-section">
+            <h1>Het Oosten</h1>
+          <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Urfa (Şanlıurfa)</p>
+                    <p style="color: black; margin-bottom: 75px">Urfa, ook bekend als Şanlıurfa, is een historische stad in het 
+                      zuidoosten van Turkije. Het staat bekend om zijn oude geschiedenis en religieuze betekenis, met talloze 
+                      historische bezienswaardigheden en religieuze locaties. Urfa heeft een rijke culturele erfenis en trekt 
+                      bezoekers aan met zijn traditionele ambachten en lokale markten. De stad heeft ook een levendige sfeer en 
+                      een warme gastvrijheid, waardoor het een boeiende bestemming is voor reizigers die de cultuur en geschiedenis 
+                      van Turkije willen verkennen.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/Sanliurfa.png" width="900px" alt="Urfa (Şanlıurfa)">
+                </div>
+            </div>
+          </article>
+            <div class="container2">
+                <div class="image2">
+                    <img src="images/Mevlidi_Halil_Cami.png" width="900px" alt="Mevlidi Halil Cami (Moskee)" style="margin-top: -150px;">
+                </div>
+                <div class="text2">
+                    <p style="color: black; margin-top: 220px; font-size: 40px;" class="title">Mevlidi Halil Cami (Moskee)</p>
+                    <p style="color: black; margin-bottom: 75px">Mevlidi Halil Cami is een historische moskee. Deze moskee 
+                      staat bekend om zijn prachtige architectuur en rijke geschiedenis. Het is vernoemd naar de profeet Abraham, 
+                      die in de islamitische traditie als "Mevlidi Halil" wordt genoemd. De moskee is een belangrijk religieus en 
+                      cultureel centrum in de regio en trekt zowel gelovigen als toeristen aan. Het biedt een serene sfeer voor 
+                      gebed en reflectie, en is een herinnering aan de diepe spirituele wortels van Şanlıurfa.</p>
+                </div>
+            </div>
+            <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 40px; font-size: 40px;" class="title">Nemrut Dağı</p>
+                    <p style="color: black; margin-bottom: 75px">De Nemrut Dağı, ook wel bekend als de Berg Nemrut, is een 
+                      opmerkelijke bergtop in Zuidoost-Turkije. Op deze berg bevinden zich de overblijfselen van een oude koninklijke 
+                      begraafplaats en heiligdom, gebouwd door koning Antiochus I van het koninkrijk Commagene in de 1e eeuw voor 
+                      Christus. Het meest opvallende kenmerk zijn de gigantische stenen beelden die de koning, goden en dieren 
+                      vertegenwoordigen en op de top van de berg staan. Nemrut Dağı is een UNESCO-werelderfgoedlocatie en trekt 
+                      bezoekers van over de hele wereld vanwege zijn indrukwekkende historische en archeologische betekenis, evenals 
+                      het adembenemende uitzicht op de omliggende bergen.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/Nemrut_Dagi.png" width="900px" alt="Nemrut Dağı" style="margin-top: -150px;">
+                </div>
+            </div>
+            </article>
+            <article>
+            <div class="container2">
+                <div class="image2">
+                    <img src="images/trabzon.png" width="900px" alt="Van" style="margin-top: -150px;">
+                </div>
+                <div class="text2">
+                    <p style="color: black; margin-top: 190px; font-size: 40px;" class="title">Van</p>
+                    <p style="color: black; margin-bottom: 75px">Van is een provincie en stad in het oosten van Turkije, gelegen 
+                      aan de oever van het Vanmeer. Het gebied staat bekend om zijn natuurlijke schoonheid, met het grootste meer 
+                      van Turkije als een opvallende attractie. De stad Van heeft een rijke geschiedenis en erfgoed, met historische 
+                      bezienswaardigheden zoals het Van-kasteel en de Akdamar-kerk, die getuigen van oude beschavingen en culturen 
+                      in de regio. De provincie Van is ook beroemd om zijn handgeweven tapijten, bekend als "Van Kilims". Het is een 
+                      bestemming voor reizigers die geïnteresseerd zijn in zowel natuurlijke pracht als culturele schatten in 
+                      Oost-Turkije.</p>
+                </div>
+            </div>
+            </article>
+            <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 40px; font-size: 40px;" class="title">Mount Ararat</p>
+                    <p style="color: black; margin-bottom: 75px">De berg Ararat is een opvallende bergtop in Oost-Turkije en wordt 
+                      beschouwd als de hoogste berg in Turkije. Het staat bekend om zijn religieuze en culturele betekenis, omdat 
+                      volgens de Bijbelse overlevering de ark van Noach op deze berg landde na de zondvloed. De berg Ararat is een 
+                      populaire bestemming voor bergbeklimmers en avonturiers vanwege zijn majestueuze piek en de uitdaging die het 
+                      beklimmen ervan met zich meebrengt. Het biedt ook een prachtig uitzicht op de omliggende natuur en het 
+                      Ararat-gebergte is een herkenbaar kenmerk in de regio.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/mount_ararat.png" width="900px" alt="Mount Ararat" style="margin-top: -150px;">
+                </div>
+            </div>
+            </article>
+            <article>
+            <div class="container2">
+                <div class="image2">
+                    <img src="images/akdamar_eiland.png" width="900px" alt="Akdamar eiland" style="margin-top: -150px;">
+                </div>
+                <div class="text2">
+                    <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Akdamar eiland</p>
+                    <p style="color: black; margin-bottom: 75px">Akdamar Island is een klein eiland gelegen in het Vanmeer. Het 
+                      staat bekend om de Akdamar-kerk, ook wel bekend als de Kerk van het Heilige Kruis, die in de 10e eeuw werd 
+                      gebouwd en is versierd met ingewikkelde, met de hand uitgehouwen stenen reliëfs. Het eiland en de kerk zijn 
+                      belangrijke historische en culturele locaties en trekken bezoekers aan met hun prachtige architectuur en 
+                      vredige omgeving. Akdamar Island biedt een inkijkje in de rijke geschiedenis en erfgoed van de regio, waardoor 
+                      het een populaire bestemming is voor toeristen en geschiedenisliefhebbers.</p>
+                </div>
+            </div>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <section class="centered-section">
+        <footer>
+            <img src="images/instagramms.png" width="40px" alt="Instagram" style="margin-right: -30px"> <img src="images/Facebook.png" width="20px" alt="Istanbul" style="margin-left: 20px"> <img src="images/Twitter.png" width="20px" alt="Twitter">
+            <p style="margin-top: -5px">Copyright - Alara Genc 2023</p>
+        </footer>
+    </section>
+</body>
+</html>

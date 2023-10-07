@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <style>
+           
+        /* Navbar opmaak */
+        nav {
+          background-color: rgb(255, 255, 255);
+          color: rgb(255, 255, 255);
+          height: 50px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 40px;
+        }
+
+        nav li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          transition: color 0.3s;
+        }
+
+        nav a:hover {
+          color: red;
+        }
+
+        .dropdown {
+          position: relative;
+        }
+
+        /* Navbar dropdown opmaak van items */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          min-width: 160px;
+          border-radius: 4px;
+        }
+
+        .dropdown-content a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: #333;
+        }
+
+        /* Dropdown van boven naar beneden*/
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* Kleur van dropdown verandert bij hover */
+        .dropdown-content a:hover {
+          background-color: #f2f2f2;
+        }
+        body {
+            font-family: 'Playfair Display';
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Reiswijzer<span style="font-size: 15px; margin-left: 7px;" class="arrow">&#9660;</span></a>
+                        <div class="dropdown-content">
+                            <!-- Dropdown items -->
+                            <a href="noorden.html">Noorden</a>
+                            <a href="oosten.html">Oosten</a>
+                            <a href="westen.html">Westen</a>
+                            <a href="zuiden.html">Zuiden</a>
+                            <a href="centrum.html">Centrum</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </h2>
+        </nav>
+    </header>
+    <main>
+        <section class="centered-section">
+          <article>
+            <div class="container2">
+                <div class="text">
+                    <br>
+                    <br>
+                    <h2>Ontdek Turkije</h2>
+                    <h3><span>Een Reis door Tijd en Pracht</span></h3>
+                    <br>
+                    <br>
+                    <p style="color: black; margin-bottom: 75px">"Ontdek Turkije: Een Reis door Tijd en Pracht" neemt je mee op een boeiende reis door Turkije, 
+                      van oude steden tot adembenemende landschappen. Of je nu van geschiedenis, natuur of avontuur houdt, Turkije heeft voor iedereen 
+                      wat te bieden. Ontdek iconische bezienswaardigheden en verborgen juweeltjes terwijl we je inspireren om de schoonheid en 
+                      diversiteit van dit prachtige land te verkennen. Of je nu van plan bent om zelf te reizen of gewoon virtueel wilt genieten, 
+                      we hopen dat onze verhalen, afbeeldingen en informatie je liefde voor Turkije zullen aanwakkeren. Trek je virtuele wandelschoenen 
+                      aan en laat ons je meenemen op deze onvergetelijke reis vol verwondering en ontdekkingen.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/ballon.JPG" alt="Luchtballon">
+                </div>
+            </div>
+          </article>
+        </section>
+        <article>
+        <div class="image-slideshow">
+            <div class="image fade">
+                <a href="noorden.html">
+                    <img src="images/Noorden.png" alt="Noorden" height="600" width="1300">
+                    <div class="caption">Klik hier om het noorden te bezoeken!</div>
+                </a>
+            </div>
+
+            <div class="image fade">
+                <a href="oosten.html">
+                    <img src="images/Oosten.png" alt="Oosten" height="600" width="1300">
+                    <div class="caption">Klik hier om het oosten te bezoeken!</div>
+                </a>
+            </div>
+
+            <div class="image fade">
+                <a href="zuiden.html">
+                    <img src="images/zuiden.png" alt="Zuiden" height="600" width="1300">
+                    <div class="caption">Klik hier om het zuiden te bezoeken!</div>
+                </a>
+            </div>
+
+            <div class="image fade">
+                <a href="westen.html">
+                    <img src="images/westen.png" alt="Westen" height="600" width="1300">
+                    <div class="caption">Klik hier om het westen te bezoeken!</div>
+                </a>
+            </div>
+
+            <div class="image fade">
+                <a href="centrum.html">
+                    <img src="images/centrum.png" alt="Centrum" height="600" width="1300">
+                    <div class="caption">Klik hier om het centrum te bezoeken!</div>
+                </a>
+            </div>
+
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <script src="script.js"></script>
+        </article>
+    </main>
+    <footer>
+        <section class="centered-section">
+            <img src="images/instagramms.png" width="40px" alt="Instagram" style="margin-right: -30px"> <img src="images/Facebook.png" width="20px" alt="Facebook" style="margin-left: 20px"> <img src="images/Twitter.png" width="20px" alt="Twitter">
+            <p style="margin-top: -5px">Copyright - Alara Genc 2023</p>
+        </section>
+    </footer>
+</body>
+</html>

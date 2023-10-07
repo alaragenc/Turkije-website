@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Westen</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <style>
+    
+        /* Navbar opmaak */
+        nav {
+          background-color: rgb(255, 255, 255);
+          color: rgb(255, 255, 255);
+          height: 50px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 40px;
+        }
+
+        nav li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          transition: color 0.3s;
+        }
+
+        nav a:hover {
+          color: red;
+        }
+
+        .dropdown {
+          position: relative;
+        }
+
+        /* Navbar dropdown opmaak van items */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          min-width: 160px;
+          border-radius: 4px;
+        }
+
+        .dropdown-content a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: #333;
+        }
+
+        /* Dropdown van boven naar beneden*/
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* Kleur van dropdown verandert bij hover */
+        .dropdown-content a:hover {
+          background-color: #f2f2f2;
+        }
+
+        body {
+            font-family: 'Playfair Display';
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigatie -->
+        <nav>
+            <h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Reiswijzer<span style="font-size: 15px; margin-left: 7px;" class="arrow">&#9660;</span></a>
+                        <div class="dropdown-content">
+                            <!-- Dropdown items -->
+                            <a href="noorden.html">Noorden</a>
+                            <a href="oosten.html">Oosten</a>
+                            <a href="westen.html">Westen</a>
+                            <a href="zuiden.html">Zuiden</a>
+                            <a href="centrum.html">Centrum</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </h2>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="centered-section">
+            <h1>Het Westen</h1>
+          <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Pamukkale</p>
+                    <p style="color: black; margin-bottom: 75px">Pamukkale is een beroemde natuurlijke attractie in Turkije, 
+                      bekend om zijn prachtige terrassen van witte kalksteenterrassen die zijn ontstaan door het neerslaan van 
+                      calciumcarbonaat uit het warme bronwater dat van de heuvel stroomt. De naam "Pamukkale" betekent letterlijk 
+                      "katoenkasteel" in het Turks vanwege de witte, katoenachtige uitstraling van de terrassen. Bezoekers kunnen 
+                      in sommige delen van Pamukkale in het warme water zwemmen en genieten van het spectaculaire landschap. Bovenop 
+                      de terrassen ligt de oude stad Hierapolis, met goed bewaard gebleven ruïnes zoals theaters, tempels en 
+                      badhuizen. Pamukkale is een populaire toeristische bestemming in Turkije en staat bekend om zijn 
+                      adembenemende schoonheid en historische betekenis.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/pamukkale.png" width="900px" alt="Pamukkale">
+                </div>
+            </div>
+          </article>
+          <article>
+            <div class="container2">
+                <div class="image2">
+                    <img src="images/canakkale.png" width="900px" alt="Canakkale" style="margin-top: -150px;">
+                </div>
+                <div class="text2">
+                    <p style="color: black; margin-top: 130px; font-size: 40px;" class="title">Canakkale</p>
+                    <p style="color: black; margin-bottom: 75px">Çanakkale is een stad en provincie in Turkije, gelegen aan de 
+                      Dardanellen, een belangrijke zeestraat die Europa en Azië met elkaar verbindt. Het heeft een rijke geschiedenis 
+                      en is bekend om zijn strategische ligging en historische gebeurtenissen, waaronder de Slag om Gallipoli tijdens 
+                      de Eerste Wereldoorlog. Çanakkale biedt prachtige landschappen met uitzicht op de Dardanellen en de Egeïsche Zee, 
+                      evenals een levendige cultuur en lokale keuken. Het is een belangrijke toeristische bestemming voor 
+                      geschiedenis- en natuurliefhebbers die de regio willen verkennen.</p>
+                </div>
+            </div>
+          </article>
+          <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 40px; font-size: 40px;" class="title">Kuşadası</p>
+                    <p style="color: black; margin-bottom: 75px">Kuşadası is een bekende badplaats gelegen aan de Egeïsche Zee in 
+                      Turkije. Het is populair vanwege zijn prachtige stranden, helderblauwe water en de nabijheid van historische 
+                      bezienswaardigheden zoals het oude Griekse theater van Ephesus en het Huis van de Maagd Maria. De stad biedt ook 
+                      een bruisende sfeer met restaurants, winkels en uitgaansgelegenheden. Kuşadası is een aantrekkelijke bestemming 
+                      voor zowel strandliefhebbers als cultuurliefhebbers die willen genieten van de schoonheid van de Egeïsche kust en 
+                      historische schatten willen verkennen.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/kusadasi.png" width="900px" alt="Kuşadası" style="margin-top: -150px;">
+                </div>
+            </div>
+          </article>
+          <article>
+            <div class="container2">
+                <div class="image2">
+                    <img src="images/ephesus.png" width="900px" alt="Efeze" style="margin-top: -150px;">
+                </div>
+                <div class="text2">
+                    <p style="color: black; margin-top: 190px; font-size: 40px;" class="title">Efeze</p>
+                    <p style="color: black; margin-bottom: 75px">Efeze is een oude stad in Turkije met historische betekenis en 
+                      archeologische overblijfselen. Het was ooit een bloeiende handelsstad en cultureel centrum van de oudheid. Efeze 
+                      trekt jaarlijks veel bezoekers aan vanwege zijn rijke geschiedenis en archeologische waarde. Het is een must-visit 
+                      bestemming voor liefhebbers van oude beschavingen.</p>
+                </div>
+            </div>
+          </article>
+          <article>
+            <div class="container2">
+                <div class="text">
+                    <p style="color: black; margin-top: 40px; font-size: 40px;" class="title">Artemis</p>
+                    <p style="color: black; margin-bottom: 75px">Artemis, ook wel bekend als de Tempel van Artemis, was een van de 
+                      Zeven Wereldwonderen van de Oude Wereld en een oude Griekse tempel gewijd aan de godin Artemis. De tempel stond 
+                      in de buurt van de antieke stad Efeze in wat nu Turkije is. Het was een indrukwekkend bouwwerk met talloze zuilen 
+                      en sculpturen, gebouwd om de godin te eren. De Tempel van Artemis in Efeze was een belangrijke religieuze en 
+                      culturele locatie in de oudheid en trok pelgrims en reizigers van over de hele Middellandse Zee. Helaas zijn er 
+                      tegenwoordig slechts enkele ruïnes en fundamenten overgebleven van wat ooit een prachtig bouwwerk was.</p>
+                </div>
+                <div class="image2">
+                    <img src="images/artemis.png" width="900px" alt="Artemis" style="margin-top: -150px;">
+                </div>
+            </div>
+          </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <section class="centered-section">
+        <footer>
+            <img src="images/instagramms.png" width="40px" alt="Instagram" style="margin-right: -30px"> <img src="images/Facebook.png" width="20px" alt="Facebook" style="margin-left: 20px"> <img src="images/Twitter.png" width="20px" alt="Twitter">
+            <p style="margin-top: -5px">Copyright - Alara Genc 2023</p>
+        </footer>
+    </section>
+</body>
+</html>
