@@ -4,7 +4,7 @@ Klas: Citroen
 Schooljaar: 1
 
 LINK NAAR LIVE WEBSITE
-http://www.mijnlivewebsite.nl
+https://alaragenc.github.io/Turkije-website/
 
 BRONVERMELDING
 1. https://www.w3schools.com/howto/howto_js_slideshow.asp
